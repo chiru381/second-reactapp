@@ -17,12 +17,7 @@ import Loginnn from './Login/Loginnn';
 import Registerrr from './Registration/Registerrr';
 import Pageaa from './ContextAPI/Pageaa';
 import { UserContext, MethodContext } from './ContextAPI/UserContext';
-import Navbar from './website/Navbar/Navbar';
-import Landingpage from './website/Landingpage/Landingpage';
-import Cards from './website/Cards/Cards';
-import Infobox from './website/Infobox/Infobox';
-import Contact from './website/Contact/Contact';
-import Footer from './website/Footer/Footer';
+
 
 function App(){
     let emp={
@@ -33,12 +28,6 @@ function App(){
         console.log("Testing... getHike function in App Component");
     }
     return<>
-    <Navbar/>
-    <Landingpage/>
-    <Cards/>
-    <Infobox/>
-    <Contact/>
-    <Footer/>
 
     <h5>data: {JSON.stringify(emp)}</h5>
     <UserContext.Provider value={emp} >
