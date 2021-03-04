@@ -17,7 +17,11 @@ import Loginnn from './Login/Loginnn';
 import Registerrr from './Registration/Registerrr';
 import Pageaa from './ContextAPI/Pageaa';
 import { UserContext, MethodContext } from './ContextAPI/UserContext';
-
+import Home from './ConditionalRendering/Home';
+import HomePage from './ConditionalRendering/HomePage';
+import PrefferedLoc from './ConditionalRendering/PrefferedLoc';
+import SelectLoc from './ConditionalRendering/SelectLoc';
+import Navbar from './Bootstrap/Navbar/Navbar';
 
 function App(){
     let emp={
@@ -28,7 +32,11 @@ function App(){
         console.log("Testing... getHike function in App Component");
     }
     return<>
-
+    <Navbar/>
+    <SelectLoc/>
+    <PrefferedLoc/>
+    <HomePage/>
+     <Home/>
     <h5>data: {JSON.stringify(emp)}</h5>
     <UserContext.Provider value={emp} >
         <MethodContext.Provider value={getHike} >
