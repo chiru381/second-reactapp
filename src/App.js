@@ -22,6 +22,9 @@ import HomePage from './ConditionalRendering/HomePage';
 import PrefferedLoc from './ConditionalRendering/PrefferedLoc';
 import SelectLoc from './ConditionalRendering/SelectLoc';
 import Navbar from './Bootstrap/Navbar/Navbar';
+import Loginif from './Login/Loginif';
+import Employee from './ListRendering/Employee/Employee';
+import EmployeeApp from './Axios/EmployeeApp/EmployeeApp';
 
 function App(){
     let emp={
@@ -32,7 +35,11 @@ function App(){
         console.log("Testing... getHike function in App Component");
     }
     return<>
+
     <Navbar/>
+    <EmployeeApp/>
+    <Employee/>
+    <Loginif/>
     <SelectLoc/>
     <PrefferedLoc/>
     <HomePage/>
