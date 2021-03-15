@@ -1,16 +1,12 @@
 import React from 'react';
-import WishMessage from './Redux/Wish/WishMessage/WishMessage';
-import store from './Redux/Wish/store';
-import { Provider } from 'react-redux';
+import ContactApp from './Axios_ContactApp/ContactApp/ContactApp';
 
-let App=()=>{
-    return(<>
+function App(){
+    return<>
     <nav className="navbar navbar-dark bg-dark">
-        <a href="/">React Redux Basic Example</a>
+        <a href="/">React HTTP-Axios Contact App</a>
     </nav>
-    <Provider store={store} >
-        <WishMessage />
-    </Provider>
-    </>)
+    <ContactApp />
+    </>
 }
 export default App;
