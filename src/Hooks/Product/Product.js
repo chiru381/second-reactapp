@@ -5,10 +5,9 @@ let Product=()=>{
         product_Name: "Grabo G106 (Dark Blue)",
         price:659,
         image: "https://rukminim1.flixcart.com/image/312/312/k6jnfrk0/mobile/6/2/s/grabo-g106-g106-original-imafzynazsfhmbgj.jpeg?q=70",
-        qty: 0,
+        qty: 1,
     });
-    return(
-    <>
+    return<>
     <div className="container mt-5">
         <div className="row">
             <div className="col-md-8">
@@ -27,7 +26,7 @@ let Product=()=>{
                             <td>{Product.product_Name}</td>
                             <td><img src={Product.image} height="80px" width="70px"/></td>
                             <td><i className="fa fa-minus-circle" onClick={()=>{setProduct({...Product, qty:Product.qty-1})}}></i> 
-                            {product.qty}
+                            {Product.qty}
                             <i className="fa fa-plus-circle" onClick={()=>{setProduct({...Product, qty:Product.qty+1})}}></i> </td>
                             <td>{Product.price}</td>
                             <td>{Product.qty * Product.price}</td>
@@ -38,6 +37,5 @@ let Product=()=>{
         </div>
     </div>
     </>
-    )
 }
 export default Product;

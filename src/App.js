@@ -1,10 +1,13 @@
 import React from 'react';
-import ContactApp from './Fuction_ContactApp/ContactApp/ContactApp';
+import Counter from './Hooks/Counter/Counter';
+import Message from './Hooks/Message/Message';
+import Product from './Hooks/Product/Product';
 
 let App=()=>{
     return<>
-    <h1>App Component</h1>
-    <ContactApp />
+    <Counter />
+    <Product />
+    <Message />
     </>
 }
 export default App;
