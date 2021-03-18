@@ -1,11 +1,9 @@
 import React from 'react';
-import ContactApp from './Axios_ContactApp/ContactApp/ContactApp';
+import ContactApp from './Fuction_ContactApp/ContactApp/ContactApp';
 
-function App(){
+let App=()=>{
     return<>
-    <nav className="navbar navbar-dark bg-dark">
-        <a href="/">React HTTP-Axios Contact App</a>
-    </nav>
+    <h1>App Component</h1>
     <ContactApp />
     </>
 }
